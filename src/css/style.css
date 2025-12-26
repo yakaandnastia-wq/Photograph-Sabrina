@@ -1161,7 +1161,6 @@ h1 {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   margin-top: 20px;
-  box-sizing: border-box;
   transition: border-color 0.3s;
   outline: none;
 }
@@ -1728,12 +1727,22 @@ ol.shale-list {
     margin-top: 35px;
     padding: 40px 0;
   }
+  .review-block {
+    flex-direction: column;
+    gap: 25px;
+  }
   .review-name {
     font-size: 14px;
+    text-align: center;
   }
   .review-job,
   .review-title {
     font-size: 12px;
+    text-align: center;
+  }
+  .review-descr {
+    max-width: 300px;
+    text-align: justify;
   }
   /* footer section */
   .footer,
