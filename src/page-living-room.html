@@ -291,32 +291,6 @@
       </div>
     </footer>
 
-    <script>
-      const form = document.getElementById("subscribeForm");
-      const formContainer = document.getElementById("formContainer");
-      const successMessage = document.getElementById("successMessage");
-
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        // Получаем данные
-        const email = document.getElementById("userEmail").value;
-        const name = document.getElementById("userName").value;
-
-        // Здесь будет отправка на сервер в будущем
-        console.log("Данные подписки:", { email, name });
-
-        // Показываем сообщение об успехе
-        formContainer.style.display = "none";
-        successMessage.classList.add("active");
-
-        // Через 4 секунды возвращаем форму
-        setTimeout(function () {
-          formContainer.style.display = "block";
-          successMessage.classList.remove("active");
-          form.reset();
-        }, 4000);
-      });
-    </script>
+    <script src="/src/js/form.js"></script>
   </body>
 </html>
